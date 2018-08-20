@@ -1,15 +1,19 @@
-h1 {
-  background: var(--color-green);
+.header-container {
+  width: 100%;
 
-  b {
-    background: color(var(--color-blue) a(90%));
+  ul {
+    display: flex;
+    flex-direction: row;
 
-    @media (max-width: 700px) {
-      color: red;
+    list-style: none;
+
+    li {
+      padding: 10px 20px;
+      border: solid 1px black;
+
+      &.active {
+        background-color: grey;
+      }
     }
   }
-}
-
-h2 {
-  background: var(--color-blue);
 }

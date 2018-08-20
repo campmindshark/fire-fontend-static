@@ -9,7 +9,7 @@ module.exports = {
   entry: './app.js',
 
   devtool: 'source-map',
-  
+
   output: {
     filename: 'js/bundle.js',
     path: path.resolve(__dirname, './docs/'),
@@ -87,11 +87,18 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/layout/about.ejs',
+      template: './src/layout/config.ejs',
       xhtml: true,
       title: config.title,
       inject: false,
-      filename: 'about.html',
+      filename: 'config.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/layout/effects.ejs',
+      xhtml: true,
+      title: config.title,
+      inject: false,
+      filename: 'effects.html',
     }),
   ],
 }

@@ -1,48 +1,97 @@
-<!doctype html>
-
-<html>
-
-<head>
-<meta charset="utf-8" />
-<title>My Sample Website</title>
-
-<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="webpack2-postcss-boilerplate">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#fff">
-<meta name="application-name" content="webpack2-postcss-boilerplate">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="shortcut icon" href="favicon/favicon.ico">
-<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="favicon/apple-touch-startup-image-320x460.png">
-<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="favicon/apple-touch-startup-image-640x920.png">
-<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="favicon/apple-touch-startup-image-640x1096.png">
-<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="favicon/apple-touch-startup-image-750x1294.png">
-<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="favicon/apple-touch-startup-image-1182x2208.png">
-<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="favicon/apple-touch-startup-image-1242x2148.png">
-<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="favicon/apple-touch-startup-image-748x1024.png">
-<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="favicon/apple-touch-startup-image-768x1004.png">
-<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="favicon/apple-touch-startup-image-1496x2048.png">
-<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="favicon/apple-touch-startup-image-1536x2008.png">
-
-<link rel="stylesheet" href="./css/bundle.css" />
-<script src="./js/bundle.js"></script>
-</head>
-
-<body>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Entry module not found: Error: Can't resolve '/Users/Olin/mindshark_workspace/fire-frontend-static/src/layout/about.ejs' in '/Users/Olin/mindshark_workspace/fire-frontend-sta  tic':
+  Error: Can't resolve '/Users/Olin/mindshark_workspace/fire-frontend-static/src/layout/about.ejs' in '/Users/Olin/mindshark_workspace/fire-frontend-static'
   
-<a href="./index.html">Homepage</a>
-<a href="./about.html">About</a>
-
-<h1>About</h1>
+  - compiler.js:76 
+    [fire-frontend-static]/[html-webpack-plugin]/lib/compiler.js:76:16
+  
+  - Compiler.js:280 Compiler.<anonymous>
+    [fire-frontend-static]/[webpack]/lib/Compiler.js:280:10
+  
+  - Compiler.js:480 
+    [fire-frontend-static]/[webpack]/lib/Compiler.js:480:13
+  
+  - Tapable.js:138 next
+    [fire-frontend-static]/[webpack]/[tapable]/lib/Tapable.js:138:11
+  
+  - CachePlugin.js:62 Compiler.<anonymous>
+    [fire-frontend-static]/[webpack]/lib/CachePlugin.js:62:5
+  
+  - Tapable.js:142 Compiler.applyPluginsAsyncSeries
+    [fire-frontend-static]/[webpack]/[tapable]/lib/Tapable.js:142:13
+  
+  - Compiler.js:477 
+    [fire-frontend-static]/[webpack]/lib/Compiler.js:477:10
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [fire-frontend-static]/[webpack]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:640 self.applyPluginsAsync.err
+    [fire-frontend-static]/[webpack]/lib/Compilation.js:640:19
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [fire-frontend-static]/[webpack]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:631 self.applyPluginsAsync.err
+    [fire-frontend-static]/[webpack]/lib/Compilation.js:631:11
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [fire-frontend-static]/[webpack]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:626 self.applyPluginsAsync.err
+    [fire-frontend-static]/[webpack]/lib/Compilation.js:626:10
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [fire-frontend-static]/[webpack]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:622 sealPart2
+    [fire-frontend-static]/[webpack]/lib/Compilation.js:622:9
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [fire-frontend-static]/[webpack]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:570 Compilation.seal
+    [fire-frontend-static]/[webpack]/lib/Compilation.js:570:8
+  
+  - Compiler.js:474 
+    [fire-frontend-static]/[webpack]/lib/Compiler.js:474:16
+  
+  - Tapable.js:225 
+    [fire-frontend-static]/[webpack]/[tapable]/lib/Tapable.js:225:11
+  
+  - Compilation.js:472 _addModuleChain
+    [fire-frontend-static]/[webpack]/lib/Compilation.js:472:11
+  
+  - Compilation.js:365 Compilation.errorAndCallback
+    [fire-frontend-static]/[webpack]/lib/Compilation.js:365:4
+  
+  - Compilation.js:382 moduleFactory.create
+    [fire-frontend-static]/[webpack]/lib/Compilation.js:382:12
+  
+  - NormalModuleFactory.js:234 
+    [fire-frontend-static]/[webpack]/lib/NormalModuleFactory.js:234:19
+  
+  - NormalModuleFactory.js:59 onDoneResolving
+    [fire-frontend-static]/[webpack]/lib/NormalModuleFactory.js:59:20
+  
+  - NormalModuleFactory.js:126 
+    [fire-frontend-static]/[webpack]/lib/NormalModuleFactory.js:126:20
+  
+  - async.js:3694 
+    [fire-frontend-static]/[webpack]/[async]/dist/async.js:3694:9
+  
+  - async.js:359 
+    [fire-frontend-static]/[webpack]/[async]/dist/async.js:359:16
+  
+  - async.js:933 iteratorCallback
+    [fire-frontend-static]/[webpack]/[async]/dist/async.js:933:13
+  
+  - async.js:843 
+    [fire-frontend-static]/[webpack]/[async]/dist/async.js:843:16
+  
+  - async.js:3691 
+    [fire-frontend-static]/[webpack]/[async]/dist/async.js:3691:13
+  
+</pre>
